@@ -1,1 +1,33 @@
 
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.app {
+  padding: 2rem;
+  background-color: #f4f4f4;
+  color: #333;
+  min-height: 100vh;
+}
+
+.app.dark {
+  background-color: #121212;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filters {
+  margin: 1rem 0;
+}
+
+button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
