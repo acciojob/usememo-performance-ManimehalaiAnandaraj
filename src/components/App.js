@@ -1,11 +1,11 @@
 import React, { useState, useMemo } from "react";
-import './../styles/App.css';
+
 
 // Utility to generate tasks
 const generateTasks = () => {
   return Array.from({ length: 50 }, (_, i) => ({
     id: i + 1,
-    title: `Task ${i + 1}`,
+    title: `Todo ${i + 1}`,
     completed: i >= 25,
   }));
 };
@@ -64,6 +64,7 @@ function App() {
         <button onClick={() => setFilter("Active")}>Active</button>
         <button onClick={() => setFilter("Completed")}>Completed</button>
       </div>
+      <div><h5>Note:List is artificially slowdown</h5></div>
 
       <TaskList tasks={filteredTasks} />
     </div>
